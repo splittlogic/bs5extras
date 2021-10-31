@@ -1,0 +1,31 @@
+{
+    "name": "splittlogic/bs5extras",
+    "type": "library",
+    "description": "Laravel Bootstrap 5 Extra Elements",
+    "homepage": "https://github.com/splittlogic/bs5extras",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SplittLogic",
+            "email": "splittlogic@gmail.com"
+        }
+    ],
+    "require": {
+        "splittlogic/bs5": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "splittlogic\\bs5extras\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "splittlogic\\bs5extras\\bs5extrasServiceProvider"
+            ],
+            "aliases": {
+                "bs5extras": "splittlogic\\bs5extras\\Facades\\bs5extras"
+            }
+        }
+    }
+}
